@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form Validation</title>
+
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 id="head">JavaScript Form Validation</h1>
+
+    <form name="myForm" onsubmit="return validateForm()">
+
+        <div class="formDesign" id="name">
+
+            <label for="">Name</label>
+            <input type="text" placeholder="Your Name" name="fname" required>
+            <strong><div class="form-error"></div></strong>
+
+        </div>
+
+        <div class="formDesign" id="email">
+
+            <label for="">Email</label>
+            <input type="email" placeholder="Email" name="femail" required>
+            <strong><div class="form-error"></div></strong>
+
+        </div>
+
+        <div class="formDesign" id="phone">
+
+            <label for="">Phone</label>
+            <input type="tel" placeholder="Phone" name="fphone" required>
+            <strong><div class="form-error"></div></strong>
+
+        </div>
+
+        <div class="formDesign" id="pass">
+
+            <label for="">Password</label>
+            <input type="password" placeholder="Password" name="fpass" required>
+            <strong><div class="form-error"></div></strong>
+
+        </div>
+
+        <div class="formDesign" id="cpass">
+
+            <label for="">Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" name="fcpass" required>
+            <strong><div class="form-error"></div></strong>
+
+        </div>
+
+        <input id="btn" type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
